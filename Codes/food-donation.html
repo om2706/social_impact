@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<title>Food Banks - Near Me</title>
+	<link rel="shortcut icon" href="images/helping-hands-logo.jpg" type="image/x-icon">
+
+</head>
+<style>
+	#myInput {
+            
+            background-position: 10px 12px;
+            /* Position the search icon */
+            background-repeat: no-repeat;
+            /* Do not repeat the icon image */
+            width: 100%;
+            /* Full-width */
+            font-size: 16px;
+            /* Increase font-size */
+            padding: 12px 20px 12px 40px;
+            /* Add some padding */
+            border: 1px solid #ddd;
+            /* Add a grey border */
+            margin-bottom: 12px;
+            /* Add some space below the input */
+        }
+
+        #myTable {
+			position: relative;
+            border-collapse: collapse;
+            /* Collapse borders */
+            width: 100%;
+            /* Full-width */
+            border: 1px solid #ddd;
+            /* Add a grey border */
+            font-size: 18px;
+            /* Increase font-size */
+			z-index: 3;
+			color: darkgoldenrod;
+        }
+        #myTable th {
+			color: darkblue;
+		}
+
+        #myTable th,
+        #myTable td {
+            text-align: left;
+            /* Left-align text */
+            padding: 12px;
+            /* Add padding */
+        }
+
+        #myTable tr {
+            /* Add a bottom border to all table rows */
+            border-bottom: 1px solid #ddd;
+        }
+
+        #myTable tr.header,
+        #myTable tr:hover {
+            /* Add a grey background color to the table header and on hover */
+            background-color: #f1f1f1;
+        }
+</style>
+<body>
+
+	<nav>
+		<ul>
+			<li class="logo"><a href="index.HTML"><img src="images/mitra1.png" alt="Mitr"></a></li>
+			<li><a href="index.html" class="link">Home</a></li>
+			<li><a href="about.html" class="link">About</a></li>
+			<li><a href="contact.html" class="link">Contact</a></li>
+		</ul>
+	</nav>
+
+	<div class="search-city">
+		<h1 class="city">Search <span>NGO's</span> in your city</h1>
+	</div>
+
+	<!-- Search-Box -->
+	<div class="search-container">
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Enter your city">
+		<button type="submit"><i class='bx bx-search-alt-2'></i></button>
+	</div>
+
+	<!-- Table-Data -->
+	<section id="table-data">
+		<table id="myTable">
+			<tr class="header">
+				<th style=" width:27%">Name of NGO</th>
+				<th style=" width:60%">Location</th>
+				<th style=" width:30%">Contact </th>
+				<th></th>
+			</tr>
+
+			<tr>
+				<td>Akshaya Patra Foundation</td>
+				<td>11, Badaliya Marg, Near Galtaji Temple, Jaipur - 302002</td>
+				<td>1412680045</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Annamrita Foundation</td>
+				<td>113-114, Radha Vihar, Heerapura, Ajmer Road, Jaipur - 302021</td>
+				<td>9001188888</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Disha Foundation</td>
+				<td>D-5, Block C, Sawai Jai Singh Highway, Bani Park, Jaipur - 302016</td>
+				<td>9829257177</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>HelpAge India</td>
+				<td>407-408,Anand Bhawan, Sawai Jai Singh Highway, Bani Park, Jaipur - 302016</td>
+				<td>1412353114</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Robin Hood Army</td>
+				<td>Jaipur Chapter, Jaipur - 302021</td>
+				<td>9799968262</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Prayas Foundation</td>
+				<td>Plot No. 8, Amrapali Circle, Vaishali Nagar, Jaipur - 302021</td>
+				<td>9461514337</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Jaipur Rotary Club</td>
+				<td>Rotary Bhawan, Sardar Patel Marg, C-Scheme, Jaipur - 302001</td>
+				<td>1412363082</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Help People Foundation</td>
+				<td>1st Floor, Durgapura Bus Stand, Tonk Road, Jaipur - 302018</td>
+				<td>7665721212</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>CRY - Child Rights and You</td>
+				<td>B-10, Bihari Marg, Bani Park, Jaipur - 302016</td>
+				<td>1412225005</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Save the Children India</td>
+				<td>B-8, Laxmi Colony, Vaishali Nagar, Jaipur - 302021</td>
+				<td>1412351070</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Smile Foundation</td>
+				<td>A-52, 1st Floor, Janpath, Shyam Nagar, Jaipur - 302019</td>
+				<td>1412293414</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Food for Life India</td>
+				<td>331, Adarsh Nagar, Jaipur - 302004</td>
+				<td>1412606889</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Seva Mandir</td>
+				<td>D-72, Shanti Path, Jawahar Nagar, Jaipur - 302004</td>
+				<td>1412623969</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Aarohan NGO</td>
+				<td>D-74, Shiv Heera Path, Chitrakoot, Jaipur - 302021</td>
+				<td>9829253430</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Helpage Elder Care</td>
+				<td>103, Shubh Laxmi Tower, Central Spine, Vidhyadhar Nagar, Jaipur - 302039</td>
+				<td>1412330268</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Goodwill Foundation</td>
+				<td>221, Nemi Nagar Extension, Vaishali Nagar, Jaipur - 302021</td>
+				<td>9828218519</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Uday Foundation</td>
+				<td>B-32, Mahesh Nagar, Jaipur - 302015</td>
+				<td>9413314810</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Rotary Club of Jaipur North</td>
+				<td>10, Pareek College Road, Bani Park, Jaipur - 302016</td>
+				<td>1412200007</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>CARE India</td>
+				<td>106, Shubh Laxmi Tower, Jaipur </td>
+				<td>1412200045</td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>Anubhuti - Ek Prayaas Sanstha</td>
+				<td>Plot No. 1096, Mahaveer Nagar II, Mahaveer Nagar, Kota-Rajasthan - 324005 </td>
+				<td>7947272241</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>RAJ Bhanwar Welfare Trust</td>
+				<td> Flat No – 204, Orient Brij, 760 Shastri Nagar, Dadabari, Kota 324009</td>
+				<td>8696425625</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Shri Karni Nagar Vikas Samiti</td>
+				<td>Gordhanpura Kota 324007</td>
+				<td>7442363741</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Shubhashraya Foundation</td>
+				<td>H.No 355, Vivekanand Nagar, Behind of Medical College, Kota 324005,</td>
+				<td>9982778677</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Koshish</td>
+				<td>H. No. 1, New Gopal Vihar, Kota 324001</td>
+				<td>9462534838</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Shine India Foundation</td>
+				<td>AA-1, Vasundhara Vihar, Bajrang Nagar, Kota 324001</td>
+				<td>8386900101</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Joy of Giving Society</td>
+				<td>Railway Workshop Colony, Kota 324002</td>
+				<td>9413543101</td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>Akshaya Patra Foundation</td>
+				<td>Bikaner, Rajasthan</td>
+				<td>8246615500</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Robin Hood Army</td>
+				<td>Bikaner, Rajasthan</td>
+				<td>8890538037</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Annamrita Foundation</td>
+				<td>Bikaner, Rajasthan</td>
+				<td>2228882200</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Serve Needy</td>
+				<td>Bikaner, Rajasthan</td>
+				<td>9950163305</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Helpage India</td>
+				<td>Bikaner, Rajasthan</td>
+				<td>1141681881</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Narayan Seva Sansthan -</td>
+				<td>Bikaner, Rajasthan</td>
+				<td>2946622222</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Maa Bharti Seva Sansthan</td>
+				<td>Jaisalmer Rajasthan </td>
+				<td>8696943207</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Sarv Samaj Kalyan Samiti</td>
+				<td>Jaisalmer Rajasthan </td>
+				<td>7877224634</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Divya Jyoti Jagriti Sansthan</td>
+				<td>Jaisalmer Rajasthan </td>
+				<td>1800118800</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Nanhe Kadam Foundation </td>
+				<td>Jaisalmer Rajasthan </td>
+				<td>8003044646</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Sai baba seva Mandal </td>
+				<td>Jaisalmer Rajasthan </td>
+				<td>9829502326</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Smile Foundation </td>
+				<td>Jaisalmer Rajasthan </td>
+				<td>1143124100</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Ek Saath Foundation </td>
+				<td>Ajmer, Rajasthan </td>
+				<td>9828555272</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Manav Kalyan Sansthan </td>
+				<td>Ajmer, Rajasthan </td>
+				<td>1512525809</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Navjeevan Seva Sansthan </td>
+				<td>Ajmer, Rajasthan </td>
+				<td>9414525652</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Global Giving Foundation</td>
+				<td>Ajmer, Rajasthan </td>
+				<td>9555696923</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Vedanta Foundation</td>
+				<td>Ajmer, Rajasthan </td>
+				<td>2266461000</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Sahayta Trust</td>
+				<td>Ajmer, Rajasthan </td>
+				<td>9829600514</td>
+				<td></td>
+			</tr>
+		</table>
+	</section>
+
+
+<!-- Background theme -->
+	<div class='ripple-background'>
+		<div class='circle xxlarge shade1'></div>
+		<div class='circle xlarge shade2'></div>
+		<div class='circle large shade3'></div>
+		<div class='circle mediun shade4'></div>
+		<div class='circle small shade5'></div>
+	</div>
+
+
+	<!-- JavaScript -->
+    <script src="script.js"></script>
+
+	
+</body>
+
+</html>

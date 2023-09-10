@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Hospitals - Near Me</title>
+    <link rel="shortcut icon" href="images/helping-hands-logo.jpg" type="image/x-icon">
+
+</head>
+<style>
+    #myInput {
+
+        background-position: 10px 12px;
+        /* Position the search icon */
+        background-repeat: no-repeat;
+        /* Do not repeat the icon image */
+        width: 100%;
+        /* Full-width */
+        font-size: 16px;
+        /* Increase font-size */
+        padding: 12px 20px 12px 40px;
+        /* Add some padding */
+        border: 1px solid #ddd;
+        /* Add a grey border */
+        margin-bottom: 12px;
+        /* Add some space below the input */
+    }
+
+    #myTable {
+        position: relative;
+        border-collapse: collapse;
+        /* Collapse borders */
+        width: 100%;
+        /* Full-width */
+        border: 1px solid #ddd;
+        /* Add a grey border */
+        font-size: 18px;
+        /* Increase font-size */
+        z-index: 3;
+        color: darkgoldenrod;
+    }
+
+    #myTable th {
+        color: darkblue;
+    }
+
+    #myTable th,
+    #myTable td {
+        text-align: left;
+        /* Left-align text */
+        padding: 12px;
+        /* Add padding */
+    }
+
+    #myTable tr {
+        /* Add a bottom border to all table rows */
+        border-bottom: 1px solid #ddd;
+    }
+
+    #myTable tr.header,
+    #myTable tr:hover {
+        /* Add a grey background color to the table header and on hover */
+        background-color: #f1f1f1;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <ul>
+            <li class="logo"><a href="index.HTML"><img src="images/mitra1.png" alt="Mitr"></a></li>
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="about.html" class="link">About</a></li>
+            <li><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-city">
+        <h1 class="city">Search <span>Hospital's</span> in your city</h1>
+    </div>
+
+    <!-- Search-Box -->
+    <div class="search-container">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Enter your city">
+        <button type="submit"><i class='bx bx-search-alt-2'></i></button>
+    </div>
+
+    <!-- Table-Data -->
+    <section id="table-data">
+        <table id="myTable">
+            <tr class="header">
+                <th style=" width:27%">Name of Hospitals</th>
+                <th style=" width:60%">Location</th>
+                <th style=" width:30%">Contact </th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>SMS Hospital</td>
+                <td>Jawahar Lal Nehru Marg, Near Rambagh Circle, Jaipur - 302004</td>
+                <td>1412560291</td>
+            </tr>
+            <tr>
+                <td>Sawai Man Singh Hospital</td>
+                <td>Jawahar Lal Nehru Marg, Near Rambagh Circle, Jaipur - 302004</td>
+                <td>1412619024</td>
+            </tr>
+            <tr>
+                <td>Fortis Escorts Hospital</td>
+                <td>Jawahar Lal Nehru Marg, Near Jawahar Circle, Jaipur - 302017</td>
+                <td>1412547000</td>
+            </tr>
+            <tr>
+                <td>Apex Hospital</td>
+                <td>SP-4 &amp; 6, Malviya Industrial Area, Malviya Nagar, Jaipur - 302017</td>
+                <td>1412751000</td>
+            </tr>
+            <tr>
+                <td>Jaipur Hospital</td>
+                <td>Lal Kothi, Tonk Road, Jaipur - 302015</td>
+                <td>1412566251</td>
+            </tr>
+            <tr>
+                <td>EHCC Hospital</td>
+                <td>8-B, Mahaveer Marg, C Scheme, Jaipur - 302001</td>
+                <td>1412361061</td>
+            </tr>
+            <tr>
+                <td>Bhagwan Mahaveer Cancer Hospital</td>
+                <td>Jawahar Lal Nehru Marg, Jaipur - 302017</td>
+                <td>1412700107</td>
+            </tr>
+            <tr>
+                <td>Mahatma Gandhi Hospital</td>
+                <td>RIICO Institutional Area, Sitapura, Jaipur - 302022</td>
+                <td>1412771777</td>
+            </tr>
+            <tr>
+                <td>Metro Multi-speciality Hospital</td>
+                <td>Laxmi Narayan Puri, Near Laxmi Mandir Cinema, Tonk Road, Jaipur - 302015</td>
+                <td>1412703857</td>
+            </tr>
+            <tr>
+                <td>Pink City Hospital</td>
+                <td>Plot No. 1 &amp; 2, Mahatma Gandhi Nagar, Tonk Road, Jaipur - 302018</td>
+                <td>1412703857</td>
+            </tr>
+            <tr>
+                <td>Narayana Multispeciality Hospital</td>
+                <td>Sector 28, Kumbha Marg, Pratap Nagar, Jaipur - 302033</td>
+                <td>1416652000</td>
+            </tr>
+            <tr>
+                <td>Maharao Bhim Singh (MBS) Hospital</td>
+                <td>Nayapura, Kota, Rajasthan 324001</td>
+                <td>7442390100</td>
+            </tr>
+            <tr>
+                <td>City Hospital and Research Centre</td>
+                <td>Dadabari, Kota, Rajasthan 324009</td>
+                <td>7442500200</td>
+            </tr>
+            <tr>
+                <td>Allen Hospital</td>
+                <td> Talwandi, Kota, Rajasthan 324005</td>
+                <td>7442430405</td>
+            </tr>
+            <tr>
+                <td>Santokba Durlabhji Memorial Hospital (SDMH)</td>
+                <td>Jhalawar Road, Kota, Rajasthan 324007</td>
+                <td>7442431298</td>
+            </tr>
+            <tr>
+                <td>Geetanjali Hospital</td>
+                <td>Talwandi, Kota, Rajasthan 324005</td>
+                <td>7442432200</td>
+            </tr>
+            <tr>
+                <td>Aakash Hospital</td>
+                <td> Kunadi, Kota, Rajasthan 324008</td>
+                <td>7442400600</td>
+            </tr>
+            <tr>
+                <td>Gumanpura Hospital</td>
+                <td>Gumanpura, Kota, Rajasthan 324006</td>
+                <td>7442390888</td>
+            </tr>
+            <tr>
+                <td>Paliwal Hospital</td>
+                <td> Kota Road, Baran, Rajasthan 325205</td>
+                <td>9352844003</td>
+            </tr>
+            <tr>
+                <td>PBM Hospital</td>
+                <td> Near Dr. Karni Singh Stadium, Jaipur Road, Bikaner</td>
+                <td>1512231901</td>
+            </tr>
+            <tr>
+                <td>S.K. Hospital</td>
+                <td>1-B-1, JNV Colony, Near Chopra Farms, Bikaner</td>
+                <td>1512231901</td>
+            </tr>
+            <tr>
+                <td>Bikaner General Hospital</td>
+                <td> Shivbari Road, Near Shivbari Temple, Bikaner</td>
+                <td>1512529365</td>
+            </tr>
+            <tr>
+                <td>&quot;</td>
+            </tr>
+            <tr>
+                <td>Sadguru Hospital&quot;</td>
+                <td> Pratap Nagar, Bikaner</td>
+                <td>1512231843</td>
+            </tr>
+            <tr>
+                <td>Jai Hospital</td>
+                <td> 2-JHA-26, Jawahar Nagar, Near Karni Singh Stadium, Bikaner</td>
+                <td>1512523600</td>
+            </tr>
+            <tr>
+                <td>Marudhar Hospital</td>
+                <td> K.E.M. Road, Near Karni Singh Stadium, Bikaner</td>
+                <td>1512227195</td>
+            </tr>
+            <tr>
+                <td>Jain Hospital and Endoscopy Centre</td>
+                <td>M.G. Nagar, Bikaner</td>
+                <td>1512526025</td>
+            </tr>
+            <tr>
+                <td>Shree Krishna Hospital</td>
+                <td>3-JHA-14, Jawahar Nagar, Bikaner</td>
+                <td>1512526495</td>
+            </tr>
+            <tr>
+                <td>Santokba Durlabhji Memorial Hospital</td>
+                <td>B-4, Ganganagar Road, Near Santoshi Mata Temple, Bikaner</td>
+                <td>1512201270</td>
+            </tr>
+            <tr>
+                <td>Narsingh Das Soni Hospital</td>
+                <td>2-B-2, JNV Colony, Near Chopra Farms, Bikaner</td>
+                <td>1512232710</td>
+            </tr>
+            <tr>
+                <td>Bhargava Hospital</td>
+                <td> Pushkar Road, Ajmer</td>
+                <td>1452642257</td>
+            </tr>
+            <tr>
+                <td>Narayana Multispeciality Hospital</td>
+                <td>Jaipur Road, Ajmer</td>
+                <td>1452424100</td>
+            </tr>
+            <tr>
+                <td>JLN Hospital and Research Centre</td>
+                <td>Jaipur Road, Ajmer</td>
+                <td>1452787000</td>
+            </tr>
+            <tr>
+                <td>Mahatma Gandhi Hospital</td>
+                <td> Bhankrota, Ajmer Road</td>
+                <td>1417166500</td>
+            </tr>
+            <tr>
+                <td>Aastha Hospital</td>
+                <td>Srinagar Road, Ajmer</td>
+                <td>1452431060</td>
+            </tr>
+            <tr>
+                <td>Kshetrapal Hospital</td>
+                <td>Ajmer Road, Nasirabad, Ajmer</td>
+                <td>1452240834</td>
+            </tr>
+            <tr>
+                <td>Sethi Hospital</td>
+                <td> Civil Lines, Ajmer</td>
+                <td>1452421204</td>
+            </tr>
+            <tr>
+                <td>Jaisalmer Medical College &amp; Hospital</td>
+                <td>Ramgarh Road, Jaisalmer, Rajasthan 345001</td>
+                <td>7665004450</td>
+            </tr>
+            <tr>
+                <td>Jain ENT Hospital</td>
+                <td>: Near Hanuman Circle, Barmer Road, Jaisalmer, Rajasthan 345001</td>
+                <td>9414474986</td>
+            </tr>
+            <tr>
+                <td>Jaisalmer Hospital</td>
+                <td>Hanuman Cir, Jaisalmer, Rajasthan 345001</td>
+                <td>9929655555</td>
+            </tr>
+            <tr>
+                <td>Desert Medicine Research Centre</td>
+                <td> New Pali Road, Jodhpur - Jaisalmer Road, Jaisalmer, Rajasthan 345001</td>
+                <td>9956247123</td>
+            </tr>
+        </table>
+    </section>
+
+
+<!-- Background theme -->
+    <div class='ripple-background'>
+        <div class='circle xxlarge shade1'></div>
+        <div class='circle xlarge shade2'></div>
+        <div class='circle large shade3'></div>
+        <div class='circle mediun shade4'></div>
+        <div class='circle small shade5'></div>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

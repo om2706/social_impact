@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Impact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/helping-hands-logo.jpg" type="image/x-icon">
+    <style>
+        /* Navigation Bar  */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .logo img {
+            height: 27px;
+        }
+
+        nav {
+            position: fixed;
+            /* background-color: azure; */
+            background-color: #F6DEC2;
+            color: #57b86a;
+            padding: 10px;
+            width: 100%;
+            z-index: 1;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #b01616;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 7px 18px;
+            border-radius: 25px;
+
+        }
+
+        nav ul li .link:hover {
+            background-color: #8ECAE6;
+        }
+
+        #home {
+            background-image: url(images/bg.jpg);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><a href="#"><img src="images/mitra1.png" alt="Mitr"></a></li>
+            <li><a href="#" class="link">Home</a></li>
+            <li><a href="about.html" class="link">About</a></li>
+            <li><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to our website</h1>
+        <p class="quote">"Discover the flavors of the world, one dish at a time, with our food-denoting website."</p>
+        <p class="quote1">Be a फरिश्ता</p>
+        <div class="drop-down">
+            <a href="#services-container"><i class='bx bx-chevrons-down'></i></a>
+        </div>
+    </section>
+
+
+    <section id="services-container">
+        <h1 class="h-primary center">OUR SERVICES</h1>
+        <div id="services">
+            <div class="box">
+                <a href="food-donation.html">
+                    <img src="images/hungerlogo.jpg" alt="">
+                    <h2 class="h-secondary center">Food Donation</h2>
+                    <p class="click">Click Here <i class='bx bx-right-arrow-alt'></i></p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="shelter.html">
+                    <img src="images/images.png" alt="">
+                    <h2 class="h-secondary center">Shelter</h2>
+                    <p class="click">Click Here <i class='bx bx-right-arrow-alt'></i></p>
+                </a>
+
+            </div>
+            <div class="box">
+                <a href="hospitals.html">
+                    <img src="images/download.png" alt="">
+                    <h2 class="h-secondary center">Hospitals</h2>
+                    <p class="click">Click Here <i class='bx bx-right-arrow-alt'></i></p>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

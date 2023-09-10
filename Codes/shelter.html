@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Shelter Home - Near Me</title>
+    <link rel="shortcut icon" href="images/helping-hands-logo.jpg" type="image/x-icon">
+
+</head>
+<style>
+    #myInput {
+
+        background-position: 10px 12px;
+        /* Position the search icon */
+        background-repeat: no-repeat;
+        /* Do not repeat the icon image */
+        width: 100%;
+        /* Full-width */
+        font-size: 16px;
+        /* Increase font-size */
+        padding: 12px 20px 12px 40px;
+        /* Add some padding */
+        border: 1px solid #ddd;
+        /* Add a grey border */
+        margin-bottom: 12px;
+        /* Add some space below the input */
+    }
+
+    #myTable {
+        position: relative;
+        border-collapse: collapse;
+        /* Collapse borders */
+        width: 100%;
+        /* Full-width */
+        border: 1px solid #ddd;
+        /* Add a grey border */
+        font-size: 18px;
+        /* Increase font-size */
+        z-index: 3;
+        color: darkgoldenrod;
+    }
+
+    #myTable th {
+        color: darkblue;
+    }
+
+    #myTable th,
+    #myTable td {
+        text-align: left;
+        /* Left-align text */
+        padding: 12px;
+        /* Add padding */
+    }
+
+    #myTable tr {
+        /* Add a bottom border to all table rows */
+        border-bottom: 1px solid #ddd;
+    }
+
+    #myTable tr.header,
+    #myTable tr:hover {
+        /* Add a grey background color to the table header and on hover */
+        background-color: #f1f1f1;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <ul>
+            <li class="logo"><a href="index.HTML"><img src="images/mitra1.png" alt="Mitr"></a></li>
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="about.html" class="link">About</a></li>
+            <li><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-city">
+        <h1 class="city">Search <span>Shelter's</span> in your city</h1>
+    </div>
+
+    <!-- Search-Box -->
+    <div class="search-container">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Enter your city">
+        <button type="submit"><i class='bx bx-search-alt-2'></i></button>
+    </div>
+
+    <!-- Table-Data -->
+    <section id="table-data">
+        <table id="myTable">
+            <tr class="header">
+                <th style=" width:27%">Name</th>
+                <th style=" width:60%">Location</th>
+                <th style=" width:30%">Contact </th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Shree parshwanath sewa sansthan</td>
+                <td>Foy sagar road, Near foy sagar lake, Ajmer HO, Ajmer - 305001</td>
+                <td>9.17943E+11</td>
+            </tr>
+            <tr>
+                <td>Shri Manav Seva Vradh Ashram</td>
+                <td>Shri Manav Seva, Manavpuram, Baral 2, Ajmer Road, Bijainagar, Bijainagar - 305624</td>
+                <td>9.17943E+11</td>
+            </tr>
+            <tr>
+                <td>Aananda A Dignity Home</td>
+                <td>Near Moksha Vridha Aashram, Kaimari Road, Hissar City, Hissar - 125001 (Near Moksha Old Age Home)
+                </td>
+                <td>9.17947E+11</td>
+            </tr>
+
+            <tr>
+                <td>Manjari Sansthan</td>
+                <td>Behind Panchayat Samiti Ward No 16, Nainwa, Bundi, Nainwa, Bundi - 32380</td>
+                <td>9.17947E+11</td>
+            </tr>
+
+            <tr>
+                <td>Apna Ghar Ashram, Ajmer</td>
+                <td>Bharatpur-321001 (Rajasthan)</td>
+                <td>8599999911-22</td>
+            </tr>
+            <tr>
+                <td>Jeevan Jyoti Old Age Home</td>
+                <td>Pashu Hatwara, Jamwa Ramgarh Road, Near Step Ahead School, Jaipur, Rajasthan 302027</td>
+                <td>088903 66112</td>
+            </tr>
+            <tr>
+                <td>Sandhyaneed Old Age Home</td>
+                <td>VPO-Dhodsar Jaipur-Sikar Highway, NH52, Jaipur, Rajasthan 303712</td>
+                <td>094140 47082</td>
+            </tr>
+            <tr>
+                <td>Shraddha - Vridhashram</td>
+                <td>5V63+P83, Shree Karani Nagar, Vikas Samithi, Kota, Rajasthan</td>
+                <td> 0744 242 1112</td>
+            </tr>
+            <tr>
+                <td>Bharat Mata Seva Samiti (Old Age Home)</td>
+                <td>government primary School ke samne, Rangbadi Nagar Medical ke pass, MBS Rd, Kota, Rajasthan 324005
+                </td>
+                <td>094132 76965</td>
+            </tr>
+            <tr>
+                <td>Vanprastha Dham</td>
+                <td> F-55 Pd Madan Mohan Malviya Nagar Scheme, Ranpur, Rajasthan 324005</td>
+                <td>7947419385</td>
+            </tr>
+            <tr>
+                <td>Apna Ghar Old Age Home</td>
+                <td> behind S R school, Talwandi, Kota, Rajasthan 324005</td>
+                <td>086969 17977</td>
+            </tr>
+            <tr>
+                <td>Apna Ghar Ashram</td>
+                <td>Polytechnic College, Campus Road, Chhatrapura, Dhanmandi, Kota, Rajasthan 324007</td>
+                <td>087643 96812</td>
+            </tr>
+            <tr>
+                <td>Pushpanjali</td>
+                <td>Indira Nagar, J.L.N Marg, Sector 9, Malviya Nagar, near Jaipuria Vidyalaya, Jaipur, Rajasthan 302018
+                </td>
+                <td>0141 272 1763</td>
+            </tr>
+            <tr>
+                <td>Golden City Hospital &amp; Fertility Centre</td>
+                <td> Dr. K. L. Achalvanshi Colony, Jaisalmer, Rajasthan 345001</td>
+                <td>082332 50511</td>
+            </tr>
+            <tr>
+                <td>SWASTIK NGO JAISALMER</td>
+                <td>WW96+H95, Malka Pol, Jaisalmer, Rajasthan 345001</td>
+                <td>02992 251 375</td>
+            </tr>
+            <tr>
+                <td>Om Shanti Seva Sansthan Old Age Home</td>
+                <td>8M36+PP8, Mangrop road, near harni mahdev mandir, Danthal, Rajasthan</td>
+                <td>094627 31900</td>
+            </tr>
+            <tr>
+                <td>APNA GHAR ASHRAM</td>
+                <td>2847+8M9, Sharma Colony, Rani Bazar, Bikaner, RJ 334001</td>
+                <td> 015 1252 6333</td>
+            </tr>
+            <tr>
+                <td>Aastha Old Age Home</td>
+                <td>Khema Ka Kua - Pal Rd, Digvijay Nagar, Keshavnagar, Jodhpur, Rajasthan 342001</td>
+                <td>91 7010727424</td>
+            </tr>
+            <tr>
+                <td>Bharat Mata Seva Samiti (Old Age Home)</td>
+                <td>government primary School ke samne, Rangbadi Nagar Medical ke pass, MBS Rd, Kota, Rajasthan 324005
+                </td>
+                <td> 094132 76965</td>
+            </tr>
+            <tr>
+                <td>ASHA DEEP SANSTHAN</td>
+                <td>20/202, Kaveri Path, Sector 21, Mansarovar, Jaipur, Rajasthan 303012</td>
+                <td> 098876 95733</td>
+            </tr>
+            <tr>
+                <td>Shubh Shanti Niwas, Prem Niketan Ashram</td>
+                <td>Manav Seva Sang Ashram, Jawahar Circle, Choti Chopad, Chandrakala Colony, Mata colony, Jaipur,
+                    Rajasthan 302018</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Shivmani Home</td>
+                <td>Shivmani Geriatric Home, Talahati, Abu Road, Rajasthan 307510</td>
+                <td>094140 37045</td>
+            </tr>
+            <tr>
+                <td>Tirth Ashram</td>
+                <td>11/168, Bhagat Singh Marg, Bhagat Singh Colony, U.I.T., Bhiwadi, Rajasthan 301019</td>
+                <td>097287 56700</td>
+            </tr>
+            <tr>
+                <td>Vruddhashram</td>
+                <td> 9W3M+PV4, Krishna Colony, Niwai, Rajasthan 304021</td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+
+
+    <!-- Background theme -->
+    <div class='ripple-background'>
+        <div class='circle xxlarge shade1'></div>
+        <div class='circle xlarge shade2'></div>
+        <div class='circle large shade3'></div>
+        <div class='circle mediun shade4'></div>
+        <div class='circle small shade5'></div>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

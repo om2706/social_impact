@@ -1,0 +1,175 @@
+/* CSS Reset */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+    --tran-03: 0.3s all ease-in-out;
+}
+
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+    /* margin: 100px 0; */
+
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('bg.jpg') no-repeat center center/cover;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    position: absolute;
+    top: 20%;
+}
+
+.drop-down {
+    position: absolute;
+    bottom: 10px;
+    color: #219EBC;
+    font-size: 23px;
+    background: transparent;
+    border: 0;
+}
+
+.drop-down a {
+    display: flex;
+    text-decoration: none;
+    color: #219EBC;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 9px;
+    border-radius: 50%;
+    transition: 0.5s all ease-in-out;
+}
+
+.drop-down a:hover {
+    position: relative;
+    bottom: 5px;
+    box-shadow: 0 0 10px #999;
+}
+
+/* Services Section */
+#services {
+    text-align: center;
+    margin: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    height: 270px;
+    width: 196px;
+    transition: 1s all ease-in-out;
+}
+
+#services .box a {
+    text-decoration: none;
+}
+
+#services .box img {
+    height: 125px;
+    margin: auto;
+    display: block;
+}
+
+#services .box:hover img {
+    height: 130px;
+    transition: var(--tran-03);
+}
+
+.service-container h1 {
+    color: rgb(0, 0, 0);
+}
+
+#services .box:hover {
+    background: #ECBD88;
+    cursor: pointer;
+}
+.quote {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    bottom: 12%;
+    margin: 10px 0px 40px;
+    font-size: 25px;
+}
+.quote1 {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    bottom: 5%;
+    margin: 10px 0px 40px;
+    font-size: 25px;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
